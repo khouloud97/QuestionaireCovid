@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Call">
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="436dp"
+        android:layout_height="241dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:srcCompat="@drawable/cof" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="432dp"
+        android:layout_height="310dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/imageView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="132dp"
+            android:layout_height="336dp"
+            app:srcCompat="@drawable/ok" />
+
+        <Button
+            android:id="@+id/call"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="294dp"
+            android:layout_height="449dp"
+            android:onClick="sendMessage"
+            android:text="Call 190"
+            android:textColor="#8A0909"
+            android:textColorHint="#E91E63"
+            android:textColorLink="#F44336"
+            android:textSize="36sp"
+            android:textStyle="bold|italic" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="442dp"
+        android:layout_height="78dp"
+        android:layout_marginBottom="8dp"
+        android:text="Exit"
+        android:textColor="#FAF00146"
+        android:textColorHighlight="#A6E7B4B4"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

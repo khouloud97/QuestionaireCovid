@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Questionaire</string>
+    <string name="msg">أحمي روحك و عايلتك</string>
+    <string name="str" />
+    <string name="username" />
+    <string name="password" />
+    <string name="login" />
+    <string name="not_registered" />
+    <string name="register" />
+    <string name="confirm_password" />
+    <string name="already_registered" />
+</resources>

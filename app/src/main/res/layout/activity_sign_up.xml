@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/q2"
+    tools:context="com.example.prooject.SignUp"
+
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="8dp">
+
+    <TextView
+        android:id="@+id/tSignUP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="117dp"
+        android:text="Créer un compte"
+        android:textColor="#5F132C"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/tFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tSignUP"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:textColorHint="#88B61E66" />
+
+    <EditText
+        android:id="@+id/tPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tEmail"
+        android:layout_alignStart="@+id/tEmail"
+        android:layout_alignLeft="@+id/tEmail"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="Passworrd"
+        android:inputType="textPassword"
+        android:textColorHint="#88B61E66" />
+
+    <EditText
+        android:id="@+id/tLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tFirstName"
+        android:layout_alignStart="@+id/tFirstName"
+        android:layout_alignLeft="@+id/tFirstName"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        android:textColorHint="#88B61E66" />
+
+    <EditText
+        android:id="@+id/tEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tLastName"
+        android:layout_alignEnd="@+id/tLastName"
+        android:layout_alignRight="@+id/tLastName"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Numero telephon"
+        android:inputType="textPersonName"
+        android:textColorHint="#88B61E66" />
+
+    <Button
+        android:id="@+id/buttonOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tPassword"
+        android:layout_alignEnd="@+id/tPassword"
+        android:layout_alignRight="@+id/tPassword"
+        android:layout_marginTop="47dp"
+        android:background="@color/colorAccent"
+        android:onClick="OK"
+        android:text="OK" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="253dp"
+        android:layout_height="91dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_myplaces"
+        tools:layout_editor_absoluteY="297dp" />
+</RelativeLayout>
